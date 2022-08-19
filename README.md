@@ -18,7 +18,7 @@ For K-means Euclidean distance is used as the distance measure, and for K-median
 
 Exit condition: the new representatives fail to improve on the results of the previous iteration, or user defined max iterations limit is reached
 
-###B-Cubed Metrics
+### B-Cubed Metrics
 B-cubed metrics for clustering require ground truth categories for each object, which are avilable in this case. These metrics are computed per object and then averaged. 
 
 B-cubed precision(x) = # objects in x's cluster that are in the same ground truth category as x / # objects in x's cluster
@@ -26,7 +26,7 @@ B-cubed recall(x) = # objects in x's cluster that are in the same ground truth c
 
 B-cubed F-score(x) = 2 * (precision(x) * recall(x)) / precision(x) + recall(x)
 
-For all of these metrics, the higher the value the better the clustering. 
+For all of these metrics, the higher the value the better the clustering. Note that for k=1 recall will be perfect. 
 
 ### Initial representative selection: the ++ in k-means++
 Selecting initial represenatives randomly can result in 'lucky' or 'unlucky' initialisations. K-means++ uses a system for selecting representatives that ensures that the initial representatives are optimally spaced out relative to the dataset. 
@@ -35,7 +35,7 @@ Selecting initial represenatives randomly can result in 'lucky' or 'unlucky' ini
 ![Figure_1](https://user-images.githubusercontent.com/34168073/185670576-447d2d72-5d43-4ad2-8344-e6107497c918.png)
 ![Figure_2](https://user-images.githubusercontent.com/34168073/185670521-c06014f9-803c-4cf3-a17d-56162624fcb2.png)
 ![Figure_3](https://user-images.githubusercontent.com/34168073/185670547-e9c75350-be49-4691-91b1-0c488bcaf663.png)
-*figure 3 does not have k=4 as the optimal clustering
+*figure 3 does not have k=4 as the optimal clustering, K-means and K-medians do not necessarily find global optima and in this case the best clustering the k-medians algorithm found for k=4 was inferior to the best clustering it found for k=3 even though we have 4 ground truth categories.
 ![Figure_4](https://user-images.githubusercontent.com/34168073/185670564-47e9249d-b12f-4dfb-9b8b-9d25a07d5c4a.png)
 
 ## Dataset
