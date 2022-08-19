@@ -1,10 +1,10 @@
 # Clustering
-An implentation of the K-means++ and K-medians clustering algorithms
+An implentation of the K-means++ and K-medians clustering algorithms, and comparison of B-cubed metrics for different values of k
 
 ## Objective
-The aim  is to cluster objects in the dataset into k many clusters, where each cluster has a represenative around whihc it is centered. K-means++ and K-medians iteratively minimise the sum of distances between objects in the dataset and the represenative of the cluster they are assigned to.
+The aim is to cluster objects in the dataset into k many clusters, where each cluster has a represenative around whihc it is centered. K-means++ and K-medians iteratively minimise the sum of distances between objects in the dataset and the represenative of the cluster they are assigned to.
 
-
+The code runs these algorithms on the dataset for values of K in the range 1 to 9, computing B-cubed F-score, precision and recall for each value of K to find the optimal value of k. Since objects in the dataset are split into 4 categories, the expectated result is that k=4 is optimal. 
 
 ## Implementation
 ### Initial representative selection: the ++ in k-means++
