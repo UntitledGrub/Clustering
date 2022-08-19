@@ -31,6 +31,10 @@ For all of these metrics, the higher the value the better the clustering. Note t
 ### Initial representative selection: the ++ in k-means++
 Selecting initial represenatives randomly can result in 'lucky' or 'unlucky' initialisations. K-means++ uses a system for selecting representatives that ensures that the initial representatives are optimally spaced out relative to the dataset. 
 
+We choose one initial representative *from our dataset* uniformly. We assign a probability to each other object in the dataset that is proportional to its distance from the currently selected representative(s) - the further away from the already selected representatives the higher the objects probability of selection, e.g. prob_selected_as_rep(x) = sum(for each rep dist(x, rep)) / sum(for each x in the dataset (sum(for each rep dist(x, rep))). We repeat this process until we have k initial representatives. 
+
+Distance is Euclidean in this case, but the code adapts this initial representative selection scheme to the K-medians algorithm by replacing Euclidean distance with Manhattan distance. 
+
 ## Results
 ![Figure_1](https://user-images.githubusercontent.com/34168073/185670576-447d2d72-5d43-4ad2-8344-e6107497c918.png)
 ![Figure_2](https://user-images.githubusercontent.com/34168073/185670521-c06014f9-803c-4cf3-a17d-56162624fcb2.png)
