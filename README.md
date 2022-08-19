@@ -35,7 +35,6 @@ Selecting initial represenatives randomly can result in 'lucky' or 'unlucky' ini
 ![Figure_1](https://user-images.githubusercontent.com/34168073/185670576-447d2d72-5d43-4ad2-8344-e6107497c918.png)
 ![Figure_2](https://user-images.githubusercontent.com/34168073/185670521-c06014f9-803c-4cf3-a17d-56162624fcb2.png)
 ![Figure_3](https://user-images.githubusercontent.com/34168073/185670547-e9c75350-be49-4691-91b1-0c488bcaf663.png)
-*figure 3 does not have k=4 as the optimal clustering, K-means and K-medians do not necessarily find global optima and in this case the best clustering the k-medians algorithm found for k=4 was inferior to the best clustering it found for k=3 even though we have 4 ground truth categories.
 ![Figure_4](https://user-images.githubusercontent.com/34168073/185670564-47e9249d-b12f-4dfb-9b8b-9d25a07d5c4a.png)
 
 ## Dataset
