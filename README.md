@@ -42,4 +42,4 @@ Distance is Euclidean in this case, but the code adapts this initial representat
 ![Figure_4](https://user-images.githubusercontent.com/34168073/185670564-47e9249d-b12f-4dfb-9b8b-9d25a07d5c4a.png)
 
 ## Dataset
-The dataset consists of categorised words paired with a vector of numerical values is small scale and have been uploaded to this repository.
+The dataset consists of categorised words paired with a vector of numerical values. Since it is a small scale dataset it has been uploaded to this repository. 
